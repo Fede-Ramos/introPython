@@ -1,3 +1,5 @@
+#HOMEWORK NUMERO 2
+
 """
 Realizar un programa que almacene en una variable si el numero actual es un numero par en un rango del 1 al 10000, utilizando solamente lo visto hasta el momento. 
 #Puede que el operador modulo (%) te ayude
@@ -27,4 +29,26 @@ while(numeroActual < 10000):
         print(False)
     else: esPrimo= numeroActual
     print(esPrimo)
-    
+
+#-----------------------------------------------------------------------------------------------
+
+
+#HOMEWORK NUMERO 3
+
+"""
+Realizar un programa que almacene en una variable si el numero actual esta en una posicion par utilizando un bucle “for” #Se puede realizar con solamente las cosas que hemos visto hasta el momento
+
+
+#Lorem tiene posición par, dolor tiene posición par, amet tiene posición par, adipiscing tiene posición par
+elementos = ["Lorem", "ipsum", "dolor", "sit,", "amet", "consectetur", "adipiscing", "elit"]
+for …:
+    if…:        actual = …
+
+"""
+elementos = ["Lorem", "ipsum", "dolor", "sit,", "amet", "consectetur", "adipiscing", "elit"]
+
+for i in elementos[0:8:2]:
+    actual= i
+    print(actual)
+     
+#------------------------------------------------------------------------------------------------    
