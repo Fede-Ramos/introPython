@@ -51,4 +51,66 @@ for i in elementos[0:8:2]:
     actual= i
     print(actual)
      
-#------------------------------------------------------------------------------------------------    
+#------------------------------------------------------------------------------------------------
+
+
+#HOMEWORK NUMERO 5
+
+
+#Investigar el metodo con el que se deben de realizar los sig enunciados: 
+#1) Agregar el contenido de una lista en otra lista
+
+l1 = [1, 2, 3]
+l2 = [100, 200, 300]
+l1.append(l2[0])
+l1.append(l2[1])
+l1.append(l2[2])
+print(l1)
+#Resultado esperado:
+# l1 = [1, 2, 3, 100, 200, 300]
+
+#2) Juntar los caracteres de una lista en una sola cadena de caracteres
+
+l3 = ["h","o","l","a"] 
+concat= ''.join(l3)
+print(concat)
+#nuevaLista= l3[0] + l3[1] + l3[2] + l3[3]
+#print(nuevaLista)
+#Resultado esperado:
+#l3 = “hola”
+
+#3) Convertir La Pimer Letra De Cada Palabra En Mayuscula
+
+l3 = "este es un texto de pruebas"
+mayus= l3.title()
+print(mayus)
+#Resultado esperado:
+#l3 = "Este Es Un Texto De Pruebas"
+
+#4) Remplazar las letras a, e, i, o, u por @, 3, 1, 0 , ~ respectivamente
+
+l4 = "murcielago"
+change= l4.replace('u', '~').replace('i', '1').replace('e', '3').replace('a', '@').replace('o', '0')
+print(change)
+#Resultado esperado:
+# l4 = "m~rc13l@g0"
+
+# s = "Naze"
+# l = list(s)
+# l[2] = 'm'
+# s = "".join(l)
+# print(s)
+
+# s = "Naze"
+# new_s = s.replace('z','m')
+# print(new_s)
+
+#5) Con un metodo, sumarle un valor a la variable
+
+l5 = 24
+lista= []
+lista.append(l5)
+suma= sum(lista, 25)
+print(suma)
+#Resultado esperado:
+# l5 = 49
