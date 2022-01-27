@@ -30,7 +30,7 @@ while(numeroActual < 10000):
     else: esPrimo= numeroActual
     print(esPrimo)
 
-#-----------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------
 
 
 #HOMEWORK NUMERO 3
@@ -50,8 +50,9 @@ elementos = ["Lorem", "ipsum", "dolor", "sit,", "amet", "consectetur", "adipisci
 for i in elementos[0:8:2]:
     actual= i
     print(actual)
+
      
-#------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------
 
 
 #HOMEWORK NUMERO 5
@@ -114,3 +115,67 @@ suma= sum(lista, 25)
 print(suma)
 #Resultado esperado:
 # l5 = 49
+
+#--------------------------------------------------------------------------------------------------------------------
+
+#HOMEWORK NUMERO 6
+
+#Para esta actividad les dare un codigo con multiples errores que realize. Su tarea es corregirlo
+
+class Automovil:
+
+    
+
+    velocidad = 100
+    llantas = 4
+    puertas = 4
+    asientos = 4
+    seguro = False
+    encendido = False
+    
+    def __encender(self):
+        self.encendido = True
+        print('El vehiculo esta ON')
+
+    def ejecutar_encender(self):
+        self.__encender()    
+
+    
+    def acelerar(self):
+        for rapidez in range(0, 100, 5):
+         print('El vehiculo esta moviendose a ', rapidez ,'km/h')
+            
+         
+    def frenar(self):
+        while (self.velocidad > 0):
+            print('Velocidad:', self.velocidad)
+            self.velocidad -= 10
+        print('El vehiculo esta deteniendose')
+        
+    
+    def __apagar(self):
+        self.encendido = False
+        print('El vehiculo esta OFF')
+
+    def ejecutar_apagar(self):
+        self.__apagar()    
+
+    
+    def modificar_estado(self):
+        if (self.encendido == False):
+         self.encendido = True
+         print('Se modifico el estado del vehiculo a ON')
+        else: print('El vehiculo ya esta encendido')   
+        
+
+
+nuevoAuto = Automovil()
+
+nuevoAuto.ejecutar_encender()
+nuevoAuto.ejecutar_apagar()
+nuevoAuto.modificar_estado()
+nuevoAuto.acelerar()
+nuevoAuto.frenar()
+
+
+
